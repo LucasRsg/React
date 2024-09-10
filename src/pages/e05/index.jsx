@@ -1,6 +1,7 @@
+import { Top } from "../../components/Top/top.jsx"
 import { Link } from "react-router-dom";
-import "./index.scss";
 import { useState } from "react";
+import "./index.scss";
 
 export default function E05() {
   const [nota1, setNota1] = useState(0);
@@ -25,24 +26,7 @@ export default function E05() {
 
   return (
     <div className="pagina-e05 pagina">
-      <div className="cabecalho">
-        <div className="titulo">
-          <img src="./assets/images/logo.png" alt="logo" />
-
-          <h1>React FreiS</h1>
-        </div>
-
-        <div className="links">
-          <Link to="/" className="link">
-            Inicio
-          </Link>
-
-          <Link to="/sobre" className="link">
-            Sobre
-          </Link>
-        </div>
-      </div>
-
+      <Top/>
       <div className="exercicio">
         <div className="titulo">
           <div className="texto">

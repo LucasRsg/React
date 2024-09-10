@@ -1,15 +1,16 @@
+import { Top } from "../../components/Top/top.jsx"
 import { Link } from "react-router-dom";
-import "./index.scss";
 import { useState } from "react";
+import "./index.scss";
 
-export default function E06() {
+export default function E07() {
 const[cor1,setCor1]=useState('');
 const[cor2,setCor2]=useState('');
 const[certo,setCerto]=useState(false);
   
 function primaria(){
   if(cor1 === "vermelho" || cor1 === "azul" || cor1 === "amarelo"){
-    if(cor2=== "vermelho" || cor2=== "azul" || cor2=== "amarelo"){
+    if(cor2 === "vermelho" || cor2 === "azul" || cor2 === "amarelo"){
     setCerto('Primária');
     }
     else{
@@ -25,24 +26,7 @@ function primaria(){
 
   return (
     <div className="pagina-e07 pagina">
-      <div className="cabecalho">
-        <div className="titulo">
-          <img src="./assets/images/logo.png" alt="logo" />
-
-          <h1>React FreiS</h1>
-        </div>
-
-        <div className="links">
-          <Link to="/" className="link">
-            Inicio
-          </Link>
-
-          <Link to="/sobre" className="link">
-            Sobre
-          </Link>
-        </div>
-      </div>
-
+      <Top/>
       <div className="exercicio">
         <div className="titulo">
           <div className="texto">

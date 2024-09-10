@@ -1,21 +1,10 @@
-import { Link } from 'react-router-dom'
+import { Top } from "../../components/Top/top.jsx"
 import './index.scss'
 
 export default function Sobre() {
     return (
         <div className='pagina-sobre pagina'>
-            <div className='cabecalho'>
-                <div className='titulo'>
-                <img  className="logo" src="./assets/images/logo.png" alt="logo" />
-                    <h1>
-                        React FreiS
-                    </h1>
-                </div>
-                <div className='links'>
-                    <Link to='/' className='link'>Inicio</Link>
-                    <Link to='/sobre' className='link'>Sobre</Link>
-                </div>
-            </div>
+            <Top/>
             <div className='conteudo'>
                 <h2>Sobre</h2>
                 <div className='descricao'>

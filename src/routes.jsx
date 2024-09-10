@@ -8,6 +8,7 @@ import E04 from "./pages/e04/index.jsx";
 import E05 from "./pages/e05/index.jsx";
 import E06 from "./pages/e06/index.jsx";
 import E07 from "./pages/e07/index.jsx";
+import E08 from "./pages/e08/index.jsx";
 
 import E11 from "./pages/e11";
 
@@ -25,6 +26,7 @@ function Navigation() {
         <Route path="/e05" element={<E05 />} />
         <Route path="/e06" element={<E06 />} />
         <Route path="/e07" element={<E07 />} />
+        <Route path="/e08" element={<E08 />} />
 
         <Route path="/e11" element={<E11 />} />
       </Routes>

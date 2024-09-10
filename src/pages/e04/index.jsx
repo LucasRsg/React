@@ -1,6 +1,7 @@
+import { Top } from "../../components/Top/top.jsx"
 import { Link } from "react-router-dom";
-import "./index.scss";
 import { useState } from "react";
+import "./index.scss";
 
 export default function E04() {
   const [leitura, setLeitura] = useState(0);
@@ -10,30 +11,15 @@ export default function E04() {
   const [tempo, setTempo] = useState(0);
 
   function calculo() {
-    setLeitura( paginas * tempo);
+    let total = paginas * tempo 
+    total = total.toFixed(2)
+    setLeitura( total );
     setSaveLivro( nomelivro );
  }
 
   return (
     <div className="pagina-e04 pagina">
-      <div className="cabecalho">
-        <div className="titulo">
-          <img src="./assets/images/logo.png" alt="logo" />
-
-          <h1>React FreiS</h1>
-        </div>
-
-        <div className="links">
-          <Link to="/" className="link">
-            Inicio
-          </Link>
-
-          <Link to="/sobre" className="link">
-            Sobre
-          </Link>
-        </div>
-      </div>
-
+      <Top/>
       <div className="exercicio">
         <div className="titulo">
           <div className="texto">
@@ -86,7 +72,9 @@ export default function E04() {
 
             <button className="executar" onClick={calculo} >Executar </button>
 
-            <h3>Você lera {savelivro} em {setLeitura} horas </h3>
+            <div>
+              {(savelivro === ""  ) ? <div></div> : <div>Você lera "{savelivro}" em {leitura / 60 / 60} horas </div>}
+            </div>
           </div>
           
         </div>

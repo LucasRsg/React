@@ -1,24 +1,11 @@
+import { Top } from "../../components/Top/top.jsx"
 import { Link } from "react-router-dom";
 import "./index.scss";
 
 export default function Inicio() {
   return (
     <div className="pagina-inicio pagina">
-      <div className="cabecalho">
-        <div className="titulo">
-          <img className="logo" src="./assets/images/logo.png" alt="logo" />
-
-          <h1>React FreiS</h1>
-        </div>
-        <div className="links">
-          <Link to="/" className="link">
-            Inicio
-          </Link>
-          <Link to="/sobre" className="link">
-            Sobre
-          </Link>
-        </div>
-      </div>
+      <Top/>
       <div className="menu">
         <div className="titulo">
           <h2>Escolha um treino...</h2>
@@ -77,6 +64,14 @@ export default function Inicio() {
               <div className="retangulo verdin" />
               <h3 className="titulo">Cores Primárias</h3>
               <h4 className="subtitulo">Exercício 7</h4>
+            </div>
+          </Link>
+
+          <Link to="/e08" className="link">
+            <div className="card">
+              <div className="retangulo pretin" />
+              <h3 className="titulo">Temperatura</h3>
+              <h4 className="subtitulo">Exercício 8</h4>
             </div>
           </Link>
 
