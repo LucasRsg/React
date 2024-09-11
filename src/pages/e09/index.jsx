@@ -8,7 +8,7 @@ export default function E09() {
   const [total, setTotal] = useState(0);
   function verifygrans() {
     if (gramas > 1000) {
-      setTotal((35 +  - 10 * 3));
+      setTotal(35 + 10.01 - 10 * 3);
     } else {
       setTotal((3.5 * gramas) / 100);
     }
