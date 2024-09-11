@@ -1,40 +1,6 @@
-.pagina-e08 {
+.pagina-e09 {
   font-family: "Roboto", "Arial";
 
-
-
-    .tabela-temperatura {
-      width: 60%;
-      margin: 20px auto;
-      border-collapse: collapse;
-      border: 2px solid #FFA07A;
-  }
-
-  .tabela-temperatura th {
-      background-color: #FFA07A;
-      padding: 10px;
-      font-size: 18px;
-      text-align: left;
-      color: #fff;
-  }
-
-  .tabela-temperatura td {
-      padding: 10px;
-      border: 1px solid #FFA07A;
-  }
-
-  .tabela-temperatura tr:nth-child(even) {
-      background-color: #FDEDEC;
-  }
-
-  .tabela-temperatura tr:nth-child(odd) {
-      background-color: #FFE4E1;
-  }
-
-  
-  
-  
-  
   .exercicio {
     padding: 60px;
 
@@ -71,14 +37,14 @@
     }
 
     .formulario {
-      width: 480px;
+      width: 280px;
       margin-left: 50%;
       transform: translateX(-50%);
       text-align: end;
       margin-top: 40px;
 
       .campos {
-        height: 595px !important ;
+        height: 100% !important ;
         padding: 20px;
 
         text-align: start;

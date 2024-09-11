@@ -1,35 +1,5 @@
-.pagina-e08 {
+.pagina-e10 {
   font-family: "Roboto", "Arial";
-
-
-
-    .tabela-temperatura {
-      width: 60%;
-      margin: 20px auto;
-      border-collapse: collapse;
-      border: 2px solid #FFA07A;
-  }
-
-  .tabela-temperatura th {
-      background-color: #FFA07A;
-      padding: 10px;
-      font-size: 18px;
-      text-align: left;
-      color: #fff;
-  }
-
-  .tabela-temperatura td {
-      padding: 10px;
-      border: 1px solid #FFA07A;
-  }
-
-  .tabela-temperatura tr:nth-child(even) {
-      background-color: #FDEDEC;
-  }
-
-  .tabela-temperatura tr:nth-child(odd) {
-      background-color: #FFE4E1;
-  }
 
   
   
@@ -71,7 +41,7 @@
     }
 
     .formulario {
-      width: 480px;
+      width: 200px;
       margin-left: 50%;
       transform: translateX(-50%);
       text-align: end;
